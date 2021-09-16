@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.App {
+  text-align: center;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.palette{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+
+.palette .btn{
+  border-radius: 30%;
+  margin: 1rem;
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  
+}
+.palette .btn:hover{
+color:white;
+background-color: red;
+  
+}
+.palette .input{
+width: 4rem;
+height: 3rem;
+border-radius: 15%;
+}
