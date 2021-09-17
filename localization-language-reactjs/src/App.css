@@ -1,38 +1,42 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 90vh;
+
+}
+.btn {
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid red;
+  border-radius: 15%;
+  color: black;
+
+}
+.btn-1{
+
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/27/12/55/turkish-flag-1774834_960_720.png");
+  background-size: cover;
+}
+.btn-2{
+
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/06/13/29/union-jack-1027898_960_720.jpg");
+  background-size: cover;
+
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
+.text{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
