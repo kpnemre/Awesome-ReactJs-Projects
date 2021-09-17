@@ -1,4 +1,4 @@
-import {IntlProvider, FormattedMessage, FormattedNumber} from 'react-intl'
+import {IntlProvider, FormattedMessage} from 'react-intl'
 import './App.css';
 import {useState, useEffect} from "react"
 
@@ -6,11 +6,11 @@ import {useState, useEffect} from "react"
 const message = {
   'tr-TR':{
 title:"Merhaba Dünya",
-description:"Çoklu dil seçeneği mevcuttur"
+description:" {count}  Dil seçeneği mevcuttur"
   },
   'en-US':{
     title:"Hello world",
-description:"There is multilangıage option"
+description:"There is {count} Language options"
 
   }
 }
@@ -34,13 +34,13 @@ localStorage.setItem("local",local)
       
       <IntlProvider messages={message[local]}locale="tr" defaultLocale="en">
       <p className="text">
-      <FormattedMessage className="text" id="title"/>
+      <FormattedMessage className="text" id="title" />
 
       </p>
 
       <br />
       <p className="text">
-      <FormattedMessage  id="description"/>
+      <FormattedMessage  id="description" values={{count:2}}/>
 
       </p>
         
