@@ -8,6 +8,7 @@
     "client": "cd client && npm start",
 "backend": "cd backend && node app.js",
 "dev": "concurrently \"npm run backend\" \"npm run client\""
+
   },
   "keywords": [],
   "author": "",
