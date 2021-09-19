@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && yarn && npm start",
-"backend": "cd backend && yarn && node app.js",
-"dev": "concurrently \"npm run backend\" \"npm run client\""
-
+    "backend": "cd backend && yarn && node app.js",
+    "dev": "concurrently \"npm run backend\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  }
 }
