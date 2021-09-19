@@ -1,0 +1,15 @@
+{
+  "name": "socket.io-change-color",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+"backend": "cd backend && node app.js",
+"dev": "concurrently \"npm run backend\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
